@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body bgcolor="aliceblue">
+  <p id="img"></p>
+  <center>
+    <a href="index.html"><img src="image/logo1.jpg" alt="Abolas TutorITE" width=60%" height="20%"></a> <br>
+    
+       <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="intro.html">Intro</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="tags.html">Tags and Element</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="attribute.html">Attribute</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="image.html">Image</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="table.html">Table</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="list.html">List</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="color.html">Color</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="form.html">Form</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="register.html">Register with US</a><hr>
+  </center>
+
+  <h2>4.0 INTRODUCTION TO IMAGE</h2>
+  <p>You remember at <a href="index.html">the start of this course</a> we talked
+    about file extensions, and you learnt what the <b>.html</b> file extension was?
+    You're now going to learn about two new file extensions: JPEG and GIF.</p>
+  <p>Just like web pages and word process documents have file extensions, so too
+    do images have file extensions. There are a wide range of file extensions used
+    for images. The two most popular file extensions used on web pages are JPEG
+    and GIF. (PNG is another popular image format. It's similar to GIF, so we won't
+    discuss it.)</p>
+  <h3>GIF Images</h3>
+  <p>GIF stands for Graphics Interchange Format, and was developed by Compuserve.
+    It uses something called a LZW compression algorithm to reduce the size of the
+    file. The size of your images on web pages is a crucial factor for people using
+    slower connections. If you have an image that is 1 megabyte in size, and I only
+    have a 2 megabit connection speed then it's going to take about 4 seconds to
+    load the image on the page. That may not seem a long time, but if my speed drops
+    to 500 kilobits per second then it will take 16 seconds to appear. I'm not likely
+    to wait that long for your image to load!</p>
+  <p>So compressing the size of an image makes sense on the internet. If you've
+    taken a photo and then saved it to your computer, take note of the file extension
+    used. The software package you use to view the image will probably give you
+    the opportunity to save the file in another format. Saving the file as a GIF
+    image will greatly reduce the size of the file.</p>
+  <p>There is a down side, however, in converting to a GIF. The number of colours
+    in your image is capped at 256 colours. For realistic photos, this is not nearly
+    enough. And although your file size is greatly reduced so too could be the quality
+    of your image.</p>
+  <h3>JPEG</h3>
+  <p>JPEG is the other popular image format used on web pages. It stands for Joint
+    Photographic Experts Group, and allows you to have images with more than 256
+    colours. In fact, millions more. Again, your original image is compressed when
+    you convert to a JPEG image, so some loss of quality is inevitable. If you want
+    to show off your photos in their best light, converting to JPEG rather than
+    GIF is the best option for the internet. The size of the file might be slightly
+    higher, but then so will the quality.</p>
+  <p>The downside to JPEG images is that jpeg is a Loss Compression format. This
+    means that image quality goes down (rapidly) the more times you compress and
+    uncompress the image. This happens when you save the file over and over again.
+    GIF on the other hand is a Lossless Compression format, meaning there will be
+    no loss of quality when you compress and uncompress the image.</p>
+  <p>Another thing you can't do with JPEG images is have a transparent background.
+    So if your image was this:</p>
+  <p>and you wanted to get rid of that black background, you could set the black
+    colour as a transparent colour, if you save as a GIF. With a JPEG, you're stuck
+    with the black background. (You can also animate GIF images, which you can't
+    do with JPEG images.)</p>
+  <p>In general, if your image is less than 256 colours, then save the image as
+    a GIF; if the image is more than 256 colours, and quality is important, then
+    save the image as a JPEG. (Modern digital cameras and mobile phones usually
+    save your pictures in the JPEG format.)</p><br>
+
+
+  <h2>4.1 INSERTING IMAGE</h2>
+  <p>So you have your image file, either a GIF file or a JPEG. How do you get it
+    into a web page? You do so with the IMG tag in HTML. The basic IMG tag looks
+    like this:</p>
+  <center>
+    <p>&lt;img src=&quot;some_image.gif&quot;&gt;</p>
+  </center>
+  <p>There are no closing tags for the img tag. So you don't do this:</p>
+  <center>
+    <p>&lt;img src=&quot;some_image.gif&quot;&gt;&lt;/img&gt;</p>
+  </center>
+  <p>In between a pair of angle brackets, you type the letters IMG (short for image,
+    of course). After a space, you type src. This stands for Source and means the
+    location of your image. After an equals sign, you type the name of your image
+    between a pair of double quotes.</p>
+  <p>It's essential that you get the src part right, though. To do that, you need
+    to know about Absolute versus Relative file referencing.</p><br>
+
+  <h3>Absolute Referencing</h3>
+  <p>Take a look at this file reference:</p>
+  <center>
+    <p>C:\Users\Owner\Documents\HTML\some_image.gif</p>
+  </center>
+  <p>Starting from the right-hand side, this says that there is an image called
+    <b>some_image.gif</b>. This has been saved into a folder called HTML. The HTML
+    folder is in the Documents folder. The Documents folder is in a folder called
+    Owner. The Owner folder is in a folder called Users, which is on the C drive.
+    This is an Absolute file reference. It points to a specific location on your
+    C drive. </p>
+
+  <p>Another example of an Absolute References is this:</p>
+  <center>
+    <p>http://www.abolastutorite.co.uk</p>
+  </center>
+  <p>That's an absolute reference to a web page on the internet. Perfectly OK, and
+    you'll see how to add links to web pages later. But Absolute References and
+    not terribly practical when it comes to you own images and your own html pages.
+    Relative References are much better.</p><br>
+
+  <h3>Relative Referencing</h3>
+  <p>So with Relative Referencing, if you put all your images and web pages in the
+    same folder, the browser will know where to find everything. And when you're
+    asking the browser to display an image or another web page, you only need the
+    name of the image or web page. You don't need to do this:</p>
+  <center>
+    <p>&lt;IMG SRC=&quot; C:\Users\Owner\Documents\HTML\some_image.gif&quot;&gt;</p>
+  </center>
+  <p>You can just do this:</p>
+  <center>
+    <p>&lt;IMG SRC=&quot;some_image.gif&quot;&gt;</p>
+  </center>
+  <p>On a professional level, though, dumping everything into one folder is frowned
+    upon. If you created a folder called &quot;web_site&quot; you would be expected
+    to create other folders inside this one. A folder called &quot;images&quot;
+    to store all your image files; a folder called &quot;scripts&quot; to store
+    any external code; and a few other folders as well.</p>
+
+  <p>For example,
+    suppose you have a web page called <b>index.html</b>. You've place this web
+    page inside of a folder called <b>web_site</b>. You've created another folder
+    inside of your web_site folder. You've called this new folder <b>images</b>.
+    So your file and structure looks like this:</p>
+  <center><img src="image/structure.gif" alt="Folder structure showing an images folder and a web page"></center>
+  <p>Of course, you will have placed all of your images in the images folder. Now,
+    if you want one of those images on the index.html page, you couldn't do this:</p>
+  <center>
+    <p>&lt;IMG SRC=&quot;some_image.gif&quot;&gt;</p>
+  </center>
+  <p>If you tried that, the image wouldn't display. That's because you haven't told
+    the browser about that folder called images. You would have to do this:</p>
+  <center>
+    <p>&lt;IMG SRC=&quot;images/some_image.gif&quot;&gt;</p>
+  </center>
+  <p>The forward slash means &quot;look for a folder called . . . that is in the
+    same folder as the current file.&quot; In this case, look for a folder called
+    &quot;images&quot;. (The current file is index.html, which is where you want
+    the image to appear.)</p><br>
+
+  <h2>4.2 IMAGE ATTRIBUTES</h2>
+  <p>When you use IMG you are using a HTML tag. The SRC part is called an attribute.
+    There are lots of other attributes you can add to the IMG tag. Here are the
+    image attributes in HTML 5:</p>
+  <center>
+    <p>ALT<br>
+      SRC<br>
+      HEIGHT<br>
+      WIDTH<br>
+    </p>
+  </center>
+  <h3>The ALT Attribute</h3>
+  <p>The first attribute is ALT. You use it like this:</p>
+  <center>
+    <p>&lt;IMG SRC=&quot;images/minster.jpg&quot;
+      ALT=&quot;Minster&quot;&gt;</p>
+  </center>
+  <p>ALT means &quot;alternative text&quot;. If the image does not display then
+    users will see the text between the double quotes of ALT. Try it out. Change
+    your HTML code to this:</p>
+  <center>
+    <p>&lt;IMG SRC=&quot;images/ministerss.jpg&quot;
+      ALT=&quot;Minster&quot;&gt;</p>
+  </center>
+  <p>Here, we've changed the name of the image. Now save your work and refresh your
+    page in the browser. You should see this (Internet Explorer):</p>
+  <center>
+    <p><img src="image/img_alt_attribute.gif" alt="Browser showing the effects of the ALT attribute"></p>
+  </center>
+  <p>Internet Explorer has added the ALT text after the red X.</p>
+  <p>You should always add some ALT text to your IMG tags as it is helpful to blind
+    and partially sighted users: the ALT text will be read out. ALT text is also
+    useful for search engines, especially Google's image search.</p>
+  <p>&nbsp;</p><br>
+  <h3>Height and Width Attributes</h3>
+  <p>Another thing you can do with the Image tag is specify a new height and width.
+    This one is quite easy. Change your image tag to this (we've left the ALT tag
+    off):</p>
+  <center>
+    <p>&lt;IMG SRC=&quot;images/minster.jpg&quot;
+      HEIGHT=&quot;512&quot; WIDTH=&quot;384&quot;&gt;<br>
+    </p>
+  </center>
+  <p>The original image was 2048 pixels high by 1536 pixels wide. By changing the
+    Height and Width, we can decrease the size of the image. The image itself will
+    still take the same amount of time to load into a browser because we haven't
+    changed the size of the JPEG file. All we've done is to change the height and
+    width attributes of the IMG tag. </p>
+  <p>This, however, would not be practical on the internet, because the size of
+    the JPEG file wouldn't change. All you'll do is use up more download time to
+    get a smaller image. So when changing image size with the Height and Width attributes,
+    go up in size and not down, as we have done here. If your images are too big,
+    use image editing software to reduce the height and width.</p>
+
+    <center>
+        <a href="attribute.html">&laquo; Back To Attribute</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="table.html">Go-To Table &raquo;</a>
+    </center>
+        <br>
+
+  <a href="#img"><img src="image/back.jpg" alt="back to top"></a>
+</body>
+
+</html>

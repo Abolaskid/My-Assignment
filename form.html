@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ABOLAS TutorITE</title>
+</head>
+<body bgcolor="aliceblue">
+        <p id="img"></p>
+        <center>
+            <a href="index.html"><img src="image/logo1.jpg" alt="Abolas TutorITE" width=60%" height="20%"></a> <br>
+    
+       <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="intro.html">Intro</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="tags.html">Tags and Element</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="attribute.html">Attribute</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="image.html">Image</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="table.html">Table</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="list.html">List</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="color.html">Color</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="form.html">Form</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="register.html">Register with US</a><hr>
+         </center>
+<h2>8.0 HTML Form Element</h2>
+<p>HTML forms are a way of gathering data from visitors to your page. Forms typically have text boxes for data input, radio buttons, drop down boxes, and buttons so that users can submit the form. A reset button is also handy, just in case mistakes are made filling out the form.</p>
+<h3>The Form Tag</h3>
+<p>You don't have to tell your browser about any form elements on your web page. If you just want a simple form element like a text box, you can insert the text box tag by itself. But if you want to do something with the information on your form, like send it somewhere or to someone, you have to "tell" your browser about the form elements on your page. You do this with the Form tag:</p>
+<p>&lt;FORM&gt;</p>
+<p> &lt;/FORM&gt;</p>
+<p>If you want your form to go somewhere or to someone, two other attributes are needed in the FORM tag: METHOD and ACTION. Like this:</p>
+<p>&lt;FORM METHOD = &quot;post&quot; Action =&quot;mailto:me@me.com&quot;&gt;</p>
+<p class="indent_small">&lt;/FORM&gt;</p>
+<p>METHOD is way to send the data. There are two options, Post and Get. Post sends the data in single lines of text; Get squashes all the data in a single line and adds it to the URL in the Action part.</p>
+<p>You should use Post to send your data, rather than Get.</p>
+<p>ACTION is used to specify the address where you want to send the data. Here, we're using an Email link to send the data straight to an email address:</p>
+<center><p>ACTION = mailto:me@me.com</p></center>
+<h3>Form Elements</h3>
+<p>There are quite a few different form elements you can add to a form:</p>
+<center><p>Text Boxes<br>
+    Text Areas<br>
+    Option Buttons<br>
+    Check Boxes<br>
+    Drop down List/Fixed Lists<br>
+    Password Boxes<br>
+    Command Buttons<br>
+    Submit Buttons<br>
+    Reset Buttons<br>
+    Labels<br>
+    Image Command Buttons<br>
+    Hidden Form Values</p></center>
+<p>HTML5, however, adds even more. There's even a very handy attribute called placeholder:</p>
+<center><p>Placeholder<br>
+    Email<br>
+    Url<br>
+    Number<br>
+    Range<br>
+    Date/Time<br>
+    Search<br>
+    Color</p></center>
+    
+    <h2>8.1Text boxes, Submit and Reset Buttons</h2>
+    <h3>The INPUT Tag and Text Boxes</h3>
+    <p>For most form elements, the word INPUT is used to set up the element. Next, you type a space followed by the word TYPE. This tells the browser what type of form elements to draw on your page. If you want a text box, the TYPE to use is "Text": <br>
+    <i>(Notice that there is no end tag for INPUT.)</i></p>
+    <center><p>&lt;INPUT TYPE = &quot;Text&quot;&gt;</p></center>
+    <p>Next, you add the attributes you want. There are quite a lot of attributes for text boxes. The three most common ones are Size, Value, and Name. Size refers to how long the text box is in pixels rather than the number of characters it can contain. It's a good idea to limit how many text characters can fit into your text box, and for this the Maxlength attribute is used:</p>
+    <center><p>&lt;INPUT TYPE = &quot;Text&quot; Size = 20 Value = &quot;&quot; Name = &quot;text1&quot; Maxlength=&quot;15&quot;&gt;</p></center>
+    <p>The Value attribute means the text that will be typed in your text box. You can set some default text, if you like. <br>
+        Whatever is between the two quote marks of VALUE is what you get back when the form is sent somewhere.</p>
+    <p>A Name attribute should be added so that you can refer to it in scripts. It distinguishes it from any other text box you may have on your form.</p>
+
+    <h3>The Submit Button</h3>
+    <p>If you want your form to be sent somewhere, a Submit button is needed (though you can write code for your own submit button). When the Submit button is clicked, the browser will check the ACTION attribute of the FORM tag to see where you want the data sent. It then checks the METHOD attribute to see what method you want to use, Post or Get. The browser will then try to send the form's data for you.</p>
+    <p>The Code for Submit Button is:</p>
+    <center><p>&lt;INPUT TYPE = &quot;Submit&quot; Value = &quot;Submit&quot;&gt;</p></center>
+    <p>This time, the TYPE is set to "Submit". The VALUE attribute is the text that will appear on the button itself. The width of the button is determined by the width of the text for the VALUE attribute. </p>
+    <center><p>Value = &quot; Submit &quot;&gt;</p></center>
+
+    <h3>The Reset Button</h3>
+    <p>The Reset button returns the form to the state it was originally in when it was loaded. Any default values you added will be retained. The code for a reset button is this:</p>
+    <center><p>&lt;INPUT TYPE = &quot;Reset&quot; Value = &quot;Clear&quot;&gt;</p></center>
+    <p>Note the TYPE is now "Reset". The value attribute works in the same way that the Submit button does - it's the text that will appear on the button.</p>
+
+    <h2>8.2 Labels, Textareas</h2>
+    <h3>Labels</h3>
+    <p>You can add labels to your form, and attach them to a specific text box or other form element. They are good when you have small elements like check boxes, as you can click on the label to select the check box.</p>
+    <p>To add a label a pair of LABEL tags are used:</p>
+    <p><b>&lt;LABEL&gt;</b>Label Text Here<b>&lt;/LABEL&gt;</b></p>
+    <p>The text you want to go on the label goes between the two tags.</p>
+    <p>To attach a label to a particular form element the FOR attribute is used, followed by the ID of the form element you want to attach it to. For example, examine the code below:</p>
+    <p>&lt;LABEL FOR=&quot;tb1&quot;&gt;First Name: &lt;/LABEL&gt;<br>
+        &lt;INPUT ID=&quot;tb1&quot; TYPE=&quot;Text&quot; Value=&quot;Enter your first name&quot; NAME=&quot;textBox1&quot;&gt;</p>
+    <p>In the code above, the LABEL is FOR a form element with the ID "tb1".</p>
+    <p>Anytime we click the label it highlight the textbox. A user can then just type a first name, without having to click inside of the text box. The label does this because it knows which text box it is "FOR".</p>
+
+    <h3>Textareas</h3>
+    <p>If you want a bigger text box, for people to leave comments for example, then you can use the TEXTAREA tag. </p>
+    <p>Textarea doesn't use the INPUT tag. And you need an end Textarea tag, as well. After typing a space, you specify how big your Textarea is going to be. You do this with the ROWS and COLS attributes. The Height equates to Rows, and the Width to Cols (not Columns):</p>
+    <p> &lt;TEXTAREA ROWS=&quot;7&quot; COLS=&quot;30&quot; NAME=&quot;TextArea1&quot; ID=&quot;TA1&quot;&gt;</p>
+    <p>&lt;/TEXTAREA&gt;</p>
+    <p>If you want some default text to appear in the Textarea then you can type it between the two tags:</p>
+    <p>&lt;TEXTAREA ROWS=&quot;7&quot; COLS=&quot;30&quot; NAME=&quot;TextArea1&quot; ID=&quot;TA1&quot;&gt;<br>
+        Default text area<br>
+        &lt;/TEXTAREA&gt;</p>
+    
+        <h2>8.3 Option Buttons, Check Boxes, List Boxes</h2>
+        <h3>Option Buttons</h3>
+        <p>Option buttons are sometimes called Radio Buttons, and they force the user into choosing only one item in a list, such as a Male/Female option, or selecting a payment method.</p>
+        <p>The Option button HTML look like this:</p>
+        <p>&lt;INPUT TYPE=&quot;Radio&quot; Name=&quot;Gender&quot; Value=&quot;Male&quot;&gt;Male<br>
+           &lt;INPUT TYPE=&quot;Radio&quot; Name=&quot;Gender&quot; Value=&quot;Female&quot;&gt;Female</p>
+        <p>The reason you keep the same name for each group of option buttons is simply to distinguish one group of option buttons from another.</p>
+        <p>The VALUE attribute is quite useful. When the user submits the form to you using the Submit button, these VALUES are going to be returned. If you've just got Radio1 and Radio2, you won't know (or won't remember, more likely) which option the user has selected. Manipulating values with scripts is also a lot easier if the Value is the same as the text the user sees.</p>
+        <p>If you want to have a default option button selected, use the word "Checked":</p>
+        <p>&lt;INPUT TYPE=&quot;Radio&quot; Name=&quot;Gender&quot; Value=&quot;Male&quot;&gt;Male<br>
+            &lt;INPUT TYPE=&quot;Radio&quot; Name=&quot;Gender&quot; Value=&quot;Female&quot; Checked&gt;Female</p>
+        <center><img src="image/option.JPG" alt="Option_Boxes"></center>
+
+        <h3>Check Boxes</h3>
+        <p>Check boxes are used to give your users the opportunity to select more than one option from a range of options. With the Radio Buttons, you could only select one item; with check boxes, you can select them all.</p>
+        <p>The HTML for check boxes looks like this:</p>
+        <p>&lt;INPUT TYPE=&quot;Checkbox&quot; Name=&quot;Browser&quot; Value =&quot;Firefox&quot;&gt;Firefox<br>
+            &lt;INPUT TYPE=&quot;Checkbox&quot; Name= &quot;Browser&quot; Value =&quot;Opera&quot;&gt;Opera</p>
+        <p>Check boxes and Radio buttons work in a similar way, and the HTML code is similar, too. The same points made about Radio buttons apply to check boxes. Note the TYPE used, though: Checkbox.</p>
+        <p>The above code for option buttons and checkboxes would look like this in the browser:</p>
+        <center><img src="image/check.jpg" alt="Checkbox_Boxes"></center>
+
+        <h3>List Boxes</h3>
+        <p>You can have a list box of items on your forms, either in a drop down format or as a fixed list. Here's what the two look like on a web page:</p>
+        <p>The HTML code for a dropdown list, the default, is this:</p>
+<p>&lt;SELECT&gt;</p>
+<p> &lt;OPTION Value=&quot;Under 16&quot;&gt;Under 16&lt;/OPTION&gt;<br>
+  &lt;OPTION Value=&quot;16 to 25&quot;&gt;16 to 25&lt;/OPTION&gt;<br>
+  &lt;OPTION Value=&quot;26 to 40&quot;&gt;26 to 40&lt;/OPTION&gt;<br>
+  &lt;OPTION Value=&quot;40 to 60&quot;&gt;40 to 60&lt;/OPTION&gt;<br>
+  &lt;OPTION Value=&quot;Over 60&quot;&gt;Over 60&lt;/OPTION&gt;</p>
+<p>&lt;/SELECT&gt;</p>
+<p>List boxes are called Select boxes in HTML and use the &lt;SELECT&gt; tag to set them up. Each item in your list needs an OPTION tag.</p>
+<p>Each item in your list needs an OPTION tag.</p>
+<p><b>&lt;OPTION Value=&quot;Under 16&quot;&gt;</b>Under 16<b>&lt;/OPTION&gt;</b></p>
+<p>If you want one of the items in your list selected by default, just choose the item and add SELECTED as an attribute. Like this:</p>
+<p><b>&lt;OPTION Value=&quot;Under 16&quot; SELECTED&gt;</b>Under 16</p><br>
+
+<h3>Password Boxes</h3>
+<p>You can add a password box to your form. This is identical to a text box in its appearance. The only difference is that when you type in the box the characters are replaced by asterisks ( * ). It's important to remember that although a password box hides the text from prying eyes, the data is not encrypted in any way.</p>
+<p>The code for a password box is this:</p>
+<p>&lt;INPUT TYPE=&quot;Password&quot; SIZE=&quot;20&quot; MAXLENGTH=&quot;8&quot;&gt;</p>
+<p>The MAXLEGTH attribute is the maximum number of characters that can be entered into the password text box. SIZE is how wide you want the password box to be.</p>
+<br>
+<h3>The PLACEHOLDER attribute</h3>
+<p>There's quite a neat new attribute you can add to your text boxes called PLACEHOLDER. This is default text that disappears when you click inside a text box. Try the following:</p>
+<p>&lt;INPUT TYPE=&quot;Text&quot; <b>PLACEHOLDER=&quot;Enter your first name&quot;</b>&gt;</p>
+<br>
+<h3>The REQUIRED attribute</h3>
+<p>If you want a text box to be filled in, you can use the REQUIRED attribute:</p>
+<p>&lt;INPUT TYPE=&quot;Text&quot; <b>PLACEHOLDER=&quot;Enter your first name&quot; REQUIRED</b>&gt;</p>
+
+<center>
+        <a href="color.html">&laquo; Back To Color</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="register.html">Go-To Register &raquo;</a>
+</center>
+
+<p>WE HOPE YOU HAD A NICE EXPERIENCE WITH THE COURSE, IF YOU NEED MORE KNOWLEDGE ON HTML KINDLY </p>
+
+        <br>
+
+    <a href="#img"><img src="image/back.jpg" alt="back to top"></a>
+</body>
+</html>
