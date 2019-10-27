@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body bgcolor="aliceblue">
+  <p id="img"></p>
+  <center>
+    <a href="index.html"><img src="image/logo1.jpg" alt="Abolas TutorITE" width=60%" height="20%"></a> <br>
+    
+       <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="intro.html">Intro</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="tags.html">Tags and Element</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="attribute.html">Attribute</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="image.html">Image</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="table.html">Table</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="list.html">List</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="color.html">Color</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="form.html">Form</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="register.html">Register with US</a><hr>
+    
+  </center>
+
+  <h2>5.0 INTRODUCTION TO TABLES</h2>
+  <p>Tables were introduced to HTML as a way to make textual data look more presentable on the screen. Things like
+    statistics could be presented in neat rows and columns, making them easier to read. </p>
+  <p>To create a table you need to use the following basic table tags: TABLE, TR, TD. They are laid out like this:</p>
+  <p>&lt;TABLE&gt;<br>
+    &lt;TR&gt;<br>
+    &lt;TD&gt;&lt;/TD&gt;<br>
+    &lt;/TR&gt;<br>
+    &lt;/TABLE&gt;</p>
+  <p>The table tags come in pairs. To set up the table, the TABLE tag is used. There is a start tag and end tag. In
+    between these two tags are the table Row tags &lt;TR&gt; &lt;/TR&gt;. For every Row in your table, you need at least
+    one Table Data tag &lt;TD&gt; &lt;/TD&gt;. The Table Data tags represent the cells in each row. In the example
+    picture above, we have a table with four rows. In each row we have a CSS property followed by 5 cells for browser
+    information. So each Row in our table has six Cells in it. For one individual Row, the code would look like this:
+  </p>
+  <p>&lt;TABLE&gt;<br>
+    &lt;TR&gt;<br>
+    &lt;TD&gt;&lt;/TD&gt;<br>
+    &lt;TD&gt;&lt;/TD&gt;<br>
+    &lt;TD&gt;&lt;/TD&gt;<br>
+    &lt;TD&gt;&lt;/TD&gt;<br>
+    &lt;TD&gt;&lt;/TD&gt;<br>
+    &lt;TD&gt;&lt;/TD&gt;<br>
+    &lt;/TR&gt;<br>
+    &lt;/TABLE&gt;</p>
+  <p>That code means set up a table with one Row, and put six cells into the Row.</p>
+  <p>The information you want people to see goes between the two TD tags:</p>
+  <p>&lt;TABLE&gt;<br>
+    &lt;TR&gt;<br>
+    &lt;TD&gt;Cell 1 Data&lt;/TD&gt;<br>
+    &lt;TD&gt;Cell 2 Data&lt;/TD&gt;<br>
+    &lt;TD&gt;Cell 3 Data&lt;/TD&gt;<br>
+    &lt;TD&gt;Cell 4 Data&lt;/TD&gt;<br>
+    &lt;TD&gt;Cell 5 Data&lt;/TD&gt;<br>
+    &lt;TD&gt;Cell 6 Data&lt;/TD&gt;<br>
+    &lt;/TR&gt;<br>
+    &lt;/TABLE&gt;
+  </p>
+  <p>This is the output of the above code</p>
+  <img src="image/table1.jpg" alt="Output of Table 1">
+
+  <p>You can also add an optional CAPTION tag, after the pair of TABLE tags:</p>
+  <p><b>&lt;CAPTION&gt;</b>MY TABLE<b>&lt;/CAPTION&gt;</b></p><br>
+
+  <h2>5.1 TABLE ATTRIBUTES</h2>
+  <h3>Table Attributes</h3>
+  <p>The TABLE tag comes with optional attributes you can use:</p>
+  <p>Align<br>
+    Border<br>
+    Bgcolor<br>
+    Cellpadding<br>
+    Cellspacing<br>
+    Height<br>
+    Width</p>
+
+  <p>The table from our image had no border. So let us add some attributes to our table to make it look nice with the
+    below code:</p>
+  <p>&lt;TABLE Border = &quot;1&quot; CellPadding = &quot;10&quot; CellSpacing = &quot;2&quot;
+    Align=&quot;center&quot;&gt;</p>
+  <img src="image/table2.jpg" alt="Output of Table 2">
+  <p>We didn't specify a width, as the default is the length of your text plus any borders, padding and spacing. The
+    default colour is none. Like all colours, though, it can take a value like &quot;Red&quot;, or a HEX/RGB colour.
+  </p>
+  <p>Cellpadding, incidentally, is the space between the text and the cell borders; cellspacing is how far apart each
+    cell is from its neighbour.</p><br>
+  <h3>Row Height and Row Width</h3>
+  <p>You can make changes to the Height and Width of not only the entire table, but to each individual cell, or row of
+    cells. Just add Width and Height attributes to the TR or TD cell. Like this:</p>
+  <p>&lt;TABLE&gt;<br>
+    &lt;TR Height = 100 Width = 100&gt;<br>
+    &lt;TD&gt;Cell 1 Data&lt;/TD&gt;<br>
+    &lt;TD&gt;Cell 2 Data&lt;/TD&gt;<br>
+    &lt;TD&gt;Cell 3 Data&lt;/TD&gt;<br>
+    &lt;TD&gt;Cell 4 Data&lt;/TD&gt;<br>
+    &lt;TD&gt;Cell 5 Data&lt;/TD&gt;<br>
+    &lt;TD&gt;Cell 6 Data&lt;/TD&gt;<br>
+    &lt;/TR&gt;<br>
+    &lt;/TABLE&gt;></p>
+  <img src="image/table3.jpg" alt="Output of Table 3">
+  <p>You can add the Height and Width attributes to individual TD cells, too, but the results are often erratic. If you
+    want one big cell next to smaller cells, the ROWSPAN and COLSPAN tags are used.<br>
+  </p><br>
+
+  <h3>ROWSPAN AND COLSPAN</h3>
+  <p>Suppose you wanted a table like this one:</p>
+  <center><img src="image/table4.gif" alt="An HTML table showing example of COLSPAN"></center>
+  <p>Here, the two cells at the top stretch across the two cells below it. For a complex table of different cell size
+    like this, you can use ROWSPAN and COLSPAN. This can get quite complex. But remember that Columns go down, and Rows
+    go across. To have one big cell stretch horizontally across two smaller cells, the code would be this:</p>
+  <p>&lt;TR&gt;<br>
+    &lt;TD COLSPAN = 2&gt;Home Team&lt;/TD&gt;<br>
+    &lt;TD COLSPAN = 2&gt;Away Team&lt;BR&gt;&lt;/TD&gt;<br>
+    &lt;/TR&gt;</p>
+  <p>The attribute COLSPAN has the value of two because one TD cell is going to stretch across two columns. We have 4
+    columns in our table above, so the first TD tag will span two columns, and so will the second one.<br>
+    If we add some of the other table tags, you might get a better idea of what's going on.</p>
+  <p>&lt;CAPTION&gt;&lt;B&gt;Football Scores&lt;/B&gt;&lt;/CAPTION&gt;</p>
+  <p>&lt;TR&gt;<br>
+    &lt;TD COLSPAN = 2&gt;Home Team&lt;/TD&gt;<br>
+    &lt;TD COLSPAN = 2&gt;Away Team&lt;BR&gt;&lt;/TD&gt;<br>
+    &lt;/TR&gt;</p>
+  <p>&lt;TR &gt;<br>
+    &lt;TD&gt;Arsenal&lt;/TD&gt;<br>
+    &lt;TD&gt;2&lt;/TD&gt;<br>
+    &lt;TD&gt;Leeds&lt;/TD&gt;<br>
+    &lt;TD&gt;1&lt;/TD&gt;<br>
+    &lt;/TR&gt;</p>
+  <p>If we wanted one big cell to stretch over all our rows, running down the left side, we would use ROWSPAN. The code
+    would be this (the &lt;BR&gt; tag gets you a blank cell):</p>
+  <p>&lt;TR&gt;<br>
+    &lt;TD ROWSPAN = 6&gt;&lt;BR&gt;&lt;/TD&gt;<br>
+    &lt;/TR&gt;</p>
+  <p>And this would be the effect:</p>
+  <center><img src="image/table5.gif" alt="An HTML table showing example of ROWSPAN"></p>
+  </center>
+  <p>You might have noticed that although the code was this:</p>
+  <p>&lt;TR&gt;<br>
+    &lt;TD ROWSPAN = 6&gt;&lt;BR&gt;&lt;/TD&gt;<br>
+    &lt;/TR&gt;</p>
+  <p>The number of rows in the table was actually only five. So why set the ROWSPAN to 6? Well, it's because we had 5
+    sets of TR tags in our table, plus the one TR tag we added for the ROWSPAN making 6 in total. The code for the whole
+    table above looks like this:</p>
+  <center><img src="image/table6.gif" alt="An HTML table showing example of ROWSPAN and COLSPAN"></center>
+  <p>There's no doubt about it, though - setting up a complex table with cells spanning across other cells can be a
+    tricky business when you're coding by hand!</p><br>
+
+  <h3>ALIGNMENT CONTENT IN A CELL</h3>
+  <p>You can align the contents in a cell, so they look more presentable. To align a cells contents, the ALIGN attribute
+    is used in the TD part of the tag. To centre-align our headings, the code would be this:</p>
+  <p>&lt;TR&gt;<br>
+    &lt;TD align=&quot;center&quot;&gt;Property&lt;/TD&gt;<br>
+    &lt;/TR&gt;</span></p>
+  <p>The other two Horizontal alignment options are &quot;Left&quot; and &quot;Right&quot;.</p>
+  <p>Alignment can also be vertical. You use the VALIGN tag for vertical alignment. The positions for vertical alignment
+    are: TOP, MIDDLE and BOTTOM.</p>
+  <p> &lt;TD VALIGN = Top&gt;<br>
+    &lt;TD VALIGN = Middle&gt;<br>
+    &lt;TD VALIGN = Bottom&gt;
+  </p><br>
+
+  <h3>Changing the Background Colour of Tables and Cells</h3>
+  <p>Individual cells can have their background colour changed. The background colour of the entire table can be
+    changed, too. To change the colour of the entire table, just add the BGCOLOR tag to the TABLE tag. Like this:</p>
+  <p>&lt;TABLE Bgcolor = &quot;Blue&quot;&gt;</p>
+  <p>You can add a splash of colour to individual cells. The BGCOLOR attribute is just added to the TD tag whose colour
+    you want to change. Like this:</p>
+  <p>&lt;TD Bgcolor= &quot;Yellow&quot;&gt;Safari&lt;/TD&gt;</p>
+  <p>&nbsp;</p>
+  <h3>Using Images in Tables</h3>
+  <p>Images can be used in tables, either as the background image of the table, or in individual cells.</p>
+  <p>&lt;TABLE Background = &quot;image_name.jpg&quot;&gt;</p>
+  <p>&lt;TD Background = &quot;image_name.jpg&quot;&gt;</p>
+  <p>Note that the attribute is BACKGROUND. After an equal sign you type the name of the image you want to use.</p>
+  
+  <center>
+      <a href="image.html">&laquo; Back To Image</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="list.html">Go-To List &raquo;</a>
+  </center>
+      <br>
+  
+  <a href="#img"><img src="image/back.jpg" alt="back to top"></a>
+</body>
+
+</html>

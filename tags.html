@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ABOLAS TutorITE</title>
+</head>
+<body bgcolor="aliceblue">
+        <p id="img"></p>
+        <center>
+            <a href="index.html"><img src="image/logo1.jpg" alt="Abolas TutorITE" width=60%" height="20%"></a> <br>
+    
+       <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="intro.html">Intro</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="tags.html">Tags and Element</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="attribute.html">Attribute</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="image.html">Image</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="table.html">Table</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="list.html">List</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="color.html">Color</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="form.html">Form</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="register.html">Register with US</a><hr>
+         </center>
+<h2>2.0 INTRODUCTION TO TAGS</h2>
+<h3>TAGS AND ELEMENT</h3>
+<ul>
+    <li><b>TAGS</b> - As told earlier, HTML is a markup language and makes use of various tags to format the content. These tags are enclosed within angle braces &lt;Tag Name&gt;. Except few tags, most of the tags have their corresponding closing tags. For example, &lt;html&gt; has its closing tag &lt;/html&gt; and &lt;body&gt; tag has its closing tag &lt;/body&gt; tag etc.</li>
+    <li><b>ELEMENT</b> - An HTML element is defined by a starting tag. If the element contains other content, it ends with a closing tag, where the element name is preceded by a forward slash as shown below with few tags <br>
+        So here &lt;p&gt;....&lt;/p&gt; is an HTML element, &lt;h1&gt;...&lt;/h1&gt; is another HTML element. There are some HTML elements which don't need to be closed, such as &lt;img.../&gt;, &lt;hr /&gt; and &lt;br /&gt; elements. These are known as void elements.</li>
+    <li><b>HTML Tag vs Element</b> - An HTML element is defined by a starting tag. If the element contains other content, it ends with a closing tag. <br>
+        For example, &lt;p&gt; is starting tag of a paragraph and &lt;/p&gt; is closing tag of the same paragraph but &lt;p&gt; This is paragraph &lt;/p&gt; is a paragraph element.</li>
+</ul>
+<h2>2.1 BASIC TAGS</h2>
+<h3>The HTML Tag</h3>
+<p>HTML is written in something called tags. Tags come in pairs, an opening one and a closing one. The first pair of tags we'll write are the HTML tags themselves. You put one HTML tag at the top, This tells a browser like Internet Explorer or Firefox that the code is HyperText Markup Language.</p>
+<p>Two  things to notice here. One, that the word HTML is surrounded by angle brackets (the Less Than and Greater Than keys on your keyboard); and two that the second Tag has a forward slash before the HTML. <br>
+        All your tags must be surrounded by the angle brackets < >. This tells the browser that there is some HTML code that needs executing, and that it is not to be shown on the web page. Miss an angle bracket out and it can really mess up your web page.</p>
+<p>The first Tag tells the browser to start doing something; the second tag tells the browser to stop doing it. The stop symbol is that forward slash. So miss that out and, again, your web page can really be messed up.</p>
+<h3>The HEAD Tag</h3>
+<p>The next pair of tags are the HEAD tags: They go between the two HTML ones:</p>
+<p>&lt;HTML&gt;</p>
+<p>&lt;HEAD&gt;</p>
+<p>&lt;/HEAD&gt;</p>
+<p>&lt;/HTML&gt;</p>
+<p>Again, notice that both the HEAD tags are surrounded by angle brackets, and there is a forward slash before the final one <br>
+    The HEAD section of HTML page is where you put special instructions for the browser. Your browser will not print directly to a web page when things are inserted into the HEAD section. For example, if you wanted to display the words 'Hello World' on your page, and you typed them in between the two HEAD tags, then the Browser would just ignore them. That's because 'Hello World' is direct text, and not a special instruction that the browser can understand.</p>
+<p>A special instruction your browser can understand is the TITLE tag. The Title tag always goes in the HEAD section of the HTML.</p>
+<p>The TITLE tag doesn't do very much. And it definitely should not be confused with the name of your web page. If you saved your web page as MyFamily.html then that would have no bearing on or relationship with the TITLE tag. Whatever you type between the two TITLE tags is what appears at the very top of your browser window. And that's it, that's all it does.</p>\
+<h3>The BODY Tag</h3>
+<p>The final, and most important part, of the HTML is the BODY section</p>
+<p>In between those two BODY tags is where you'll write most of your HTML code. Think of the BODY as the white page in Word Processing. When you type something in your word processing software, it is immediately displayed. Similarly, when you type something between the two BODY tags and then view the results in a browser, whatever you typed will be displayed. As long as it's not a tag, your browser will try to display it for you. So remember: if you want people to see it, put it between the BODY tags.</p>
+<h3>The DOCTYPE Tag</h3>
+<p>One special tag is DOCTYPE. It's not really a HTML tag, but an instruction to the browser about which version of HTML is allowed. In version of HTML prior to HTML 5 the DOCTYPE could be very messy. In HTML 5, however, it's just this:</p>
+<p>&lt;!DOCTYPE HTML&gt;</p>
+<center>
+    <img src="image/basic1.jpg" alt="Abolas TutorITE"><br>
+</center> 
+    <h3>Saving Web Pages</h3>
+    <p>To save your code as a web page, click the File menu at the top of VSC(Visual Studio Code) or whatever Text Editor you are using. From the File menu, select Save As. The Save As dialogue box appears</p>
+    <center><img src="image/save.JPG" alt="SAVE_AS"></center>
+    <p>Select the folder you want the file to be saved, then enter the file name plus extension <b>.html</b> or <b>.htm</b><br>
+    After that change the Save As Type to <b>HTML</b>.</p>
+<h3>Viewing Your Web Pages</h3>
+<p>To view the results, open up an explorer window. In Windows, this is done by holding down the Windows keys and then pressing the letter E on your keyboard. Or click your Start menu in the bottom left, and then click on Computer. On a Mac, click the Finder icon in the Dock.</p>
+<p>Navigate to where you saved your HTML page. Double click your HTML file and it will launch in your default browser.</p>
+    
+<center>
+        <a href="intro.html">&laquo; Back To Intro</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="attribute.html">Go-To Attribute &raquo;</a>
+</center>
+        <br>
+
+<a href="#img"><img src="image/back.jpg" alt="back to top"></a>
+</body>
+</html>
